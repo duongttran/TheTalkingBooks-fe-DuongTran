@@ -45,11 +45,11 @@ export default function Login({ setLogin }) {
   };
 
   return (
-    <div className="login-page">
-      <h1>Login</h1>
+    <Container>
+      <Row>
+        <div className="login-page">
+          <h1>Login</h1>
 
-      <Container>
-        <Row>
           <p>Please log in to see the detail page of our books</p>
           <Form>
             <Form.Group controlId="formBasicEmail">
@@ -80,8 +80,8 @@ export default function Login({ setLogin }) {
               Submit
             </Button>
           </Form>
-        </Row>
-      </Container>
-    </div>
+        </div>
+      </Row>
+    </Container>
   );
 }
