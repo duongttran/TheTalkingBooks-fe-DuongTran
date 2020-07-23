@@ -55,10 +55,10 @@ export default function Details(props) {
       <div class="container-fluid grey-background">
         <div class="container">
           <div class="detail-part row">
-            <div class="col-md-3 col-xs-12">
+            <div class="col-md-2 col-xs-12">
               <img src={book.image} alt="no image" />
             </div>
-            <div class="col-md-9 col-xs-12">
+            <div class="col-md-10 col-xs-12">
               <div class="detail-of-a-book">
                 <h4>{book.title}</h4>
 
