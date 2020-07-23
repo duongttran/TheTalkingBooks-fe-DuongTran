@@ -144,7 +144,7 @@ function App() {
 
             {user.isLoggedIn ? (
               <DropdownButton
-                title={user.name}
+                title={user.user.name}
                 className="navi-item add-right-space"
               >
                 <Link onClick={() => logout()} className="navi-item">

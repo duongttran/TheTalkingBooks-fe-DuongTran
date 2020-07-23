@@ -37,6 +37,8 @@ export default function Login({ setLogin }) {
       const user = dt.data.user;
       const token = dt.data.token;
       localStorage.setItem("token", token);
+      console.log("this is user", user);
+      localStorage.setItem("user", user.name);
       setLogin(user);
       history.push("/");
     } else {
