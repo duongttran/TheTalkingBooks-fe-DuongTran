@@ -2,8 +2,12 @@ import React from "react";
 import BookCard from "./BookCard";
 import "./Book.css";
 import { useState, useEffect } from "react";
+<<<<<<< HEAD
 import { BACKEND_URL } from "../app.constant";
 
+=======
+import { BACKEND_URL } from "../app.constants";
+>>>>>>> develop
 export default function BookList() {
   const [bookList, setbookList] = useState([]);
 

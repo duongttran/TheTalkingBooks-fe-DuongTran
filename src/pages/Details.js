@@ -54,55 +54,51 @@ export default function Details(props) {
       {/* <h3>Details about the book:</h3> */}
       <div class="container-fluid grey-background">
         <div class="container">
-          <div class="row ">
-            <div class="detail-part">
-              <div class="col-md-3">
-                <img src={book.image} alt="no image" />
-              </div>
-              <div class="col-md-9">
-                <div class="detail-of-a-book">
-                  <h4>{book.title}</h4>
+          <div class="detail-part row">
+            <div class="col-md-3 col-xs-12">
+              <img src={book.image} alt="no image" />
+            </div>
+            <div class="col-md-9 col-xs-12">
+              <div class="detail-of-a-book">
+                <h4>{book.title}</h4>
 
-                  {/* <div><ul>
+                {/* <div><ul>
                     {book.authors.map(item => {
                       return (<li>{item}</li>)
                     })}
                   </ul></div> */}
-                  <p>{book.authors}</p>
+                <p>{book.authors}</p>
 
-                  <p className="detail-book">Page Count: {book.pageCount}</p>
-                  <p className="detail-book">Rating: {book.averageRating}</p>
-                  <p className="detail-book">
-                    Published Date: {book.publishedDate}
-                  </p>
-                  {book.audioUrl ? (
-                    <ReactAudioPlayer src={book.audioUrl} controls />
-                  ) : (
-                    <div>no audio found</div>
-                  )}
-                  {props.user &&
-                  props.user.user &&
-                  props.user.user.role === "host" ? (
-                    <form
-                      onSubmit={(e) => editAudio(e)}
-                      onChange={(e) =>
-                        setBook({ ...book, audioUrl: e.target.value })
-                      }
-                    >
-                      <input
-                        type="text"
-                        name="audioURL"
-                        value={book.audioUrl}
-                        className="audio-box"
-                      ></input>
-                      <button className="btn btn-primary" type="submit">
-                        Edit Audio URL
-                      </button>
-                    </form>
-                  ) : (
-                    <div></div>
-                  )}
-                </div>
+                <p className="detail-book">Page Count: {book.pageCount}</p>
+                <p className="detail-book">Rating: {book.averageRating}</p>
+                <p className="detail-book">
+                  Published Date: {book.publishedDate}
+                </p>
+                {book.audioUrl ? (
+                  <ReactAudioPlayer src={book.audioUrl} controls />
+                ) : (
+                  <div>no audio found</div>
+                )}
+                {props.user &&
+                props.user.user &&
+                props.user.user.role === "host" ? (
+                  <form
+                    onSubmit={(e) => editAudio(e)}
+                    onChange={(e) =>
+                      setBook({ ...book, audioUrl: e.target.value })
+                    }
+                  >
+                    <p>Insert an MP3 file to edit/play the audio</p>
+                    <input
+                      type="text"
+                      name="audioURL"
+                      value={book.audioUrl}
+                      className="audio-box"
+                    ></input>
+                  </form>
+                ) : (
+                  <div></div>
+                )}
               </div>
             </div>
           </div>
