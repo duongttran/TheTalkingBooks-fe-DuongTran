@@ -10,11 +10,7 @@ export default function SignUp() {
   const [password, setPassword] = useState([]);
 
   const signUp = async () => {
-<<<<<<< HEAD
     const data = await fetch(process.env.REACT_APP_SERVER + "/users", {
-=======
-    const data = await fetch(`${BACKEND_URL}/users`, {
->>>>>>> develop
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -29,6 +25,8 @@ export default function SignUp() {
       console.log("cannot register");
     }
   };
+
+  ///dsadasdas
 
   return (
     <Container>
