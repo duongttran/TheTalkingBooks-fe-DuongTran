@@ -26,10 +26,11 @@ export default function SignUp() {
   };
 
   return (
-    <div className="signup-page">
-      <h1>Sign Up</h1>
-      <Container>
-        <Row>
+    <Container>
+      <Row>
+        <div className="signup-page">
+          <h1>Sign Up</h1>
+
           <Form>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Name</Form.Label>
@@ -67,8 +68,8 @@ export default function SignUp() {
               Submit
             </Button>
           </Form>
-        </Row>
-      </Container>
-    </div>
+        </div>
+      </Row>
+    </Container>
   );
 }
