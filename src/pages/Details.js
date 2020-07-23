@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Details.css";
 import ReactAudioPlayer from "react-audio-player";
 import { useParams } from "react-router-dom";
+import Spinner from "react-bootstrap/Spinner";
 export default function Details(props) {
   const [book, setBook] = useState(null);
   console.log(props);
@@ -41,7 +42,13 @@ export default function Details(props) {
     }
   };
   console.log(book);
-  if (!book) return <h1>loading</h1>;
+  if (!book)
+    return (
+      <div>
+        <h1>loading</h1>
+        <Spinner animation="border" />
+      </div>
+    );
   return (
     <div class="detail-page">
       {/* <h3>Details about the book:</h3> */}

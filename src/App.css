@@ -89,3 +89,21 @@
 .add-right-space {
   margin-right: 100px;
 }
+
+@media screen and (max-width: 600px) {
+  .text-on-image {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  .page-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}

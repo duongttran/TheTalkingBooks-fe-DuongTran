@@ -100,7 +100,13 @@ function App() {
   //   );
   // }
   console.log(user);
-  if (!user.loaded) return <h1>loading</h1>;
+  if (!user.loaded)
+    return (
+      <div>
+        <h1>loading</h1>
+        <Spinner animation="border" />
+      </div>
+    );
   return (
     <BrowserRouter>
       <div className="App">
