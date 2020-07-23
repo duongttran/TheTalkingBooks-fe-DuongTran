@@ -185,6 +185,12 @@ function App() {
               </h1>
             </div>
             <div>
+              <div class="note">
+                <h3 className="text-center">Our current books</h3>
+                <p className="text-center">
+                  Please sign up and login to get access into our books!
+                </p>
+              </div>
               <BookList />
             </div>
           </Route>

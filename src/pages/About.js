@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div>
       <div class="introduction">
-        <h1 class="intro text-center">Why Audio Book?</h1>
+        <h1 class="intro text-center">Why using The Talking Books?</h1>
         <div class="container">
           <div class="row">
             <div class="col-md-4">

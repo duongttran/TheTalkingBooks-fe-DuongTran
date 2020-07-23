@@ -53,7 +53,10 @@ export default function Login({ setLogin }) {
         <div className="login-page">
           <h1>Login</h1>
 
-          <p>Please log in to see the detail page of our books</p>
+          <p>
+            Please log in to see the detail page of our books. Only the host can
+            create a book.
+          </p>
           <Form>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
