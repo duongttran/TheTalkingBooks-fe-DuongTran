@@ -28,3 +28,10 @@
   top: 5px;
   margin-right: 10px;
 }
+
+@media screen and (max-width: 600px) {
+  .detail-of-a-book {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+}
